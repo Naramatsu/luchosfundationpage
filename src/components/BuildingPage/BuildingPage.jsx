@@ -13,7 +13,7 @@ const BuildingPage = () => (
       <img src={logo} alt="logo" className="logo" />
       <h3>
         We are building this project in hope you can know more about us, and
-        turn into a super hero for these non speakers four paws Angels.
+        turn into a super hero for these four paws angels.
       </h3>
     </Container>
     <img src={runningDog} alt="running_dog" className="running__dog" />
