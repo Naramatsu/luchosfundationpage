@@ -9,6 +9,7 @@ const logo = "logo.png";
 
 const BuildingPage = () => (
   <section className="building__page">
+    <section className="bg"></section>
     <Container>
       <img src={logo} alt="logo" className="logo" />
       <h3>
