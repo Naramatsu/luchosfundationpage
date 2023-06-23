@@ -1,0 +1,52 @@
+.section__info {
+  width: 100%;
+  background-color: rgba($color: #fff, $alpha: 0.8);
+  position: relative;
+
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5em 0;
+    gap: 2em;
+
+    section {
+      h3 {
+        position: relative;
+        margin-bottom: 1em;
+
+        &::after {
+          content: "";
+          width: 60px;
+          height: 5px;
+          background-color: #f79c31;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+        }
+      }
+
+      p {
+        margin-bottom: 2em;
+        font-weight: bold;
+      }
+
+      .general__button {
+        text-transform: uppercase;
+        padding: 1.5em 2em;
+        border-radius: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .section__info .container {
+    grid-template-columns: 1fr;
+
+    img {
+      margin: auto;
+    }
+  }
+}

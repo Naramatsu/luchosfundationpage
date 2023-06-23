@@ -1,0 +1,59 @@
+.building__page {
+  background-color: #2a2541;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      margin-top: 10%;
+      position: relative;
+      width: 250px;
+      height: 250px;
+      filter: brightness(0) invert(1)
+        drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    }
+
+    h3 {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+
+  .running__dog {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    animation-name: running;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes running {
+  0%,
+  100% {
+    left: -250px;
+    transform: rotateY(0deg);
+  }
+  1%,
+  49% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    left: 100%;
+  }
+  51%,
+  99% {
+    transform: rotateY(180deg);
+  }
+}
