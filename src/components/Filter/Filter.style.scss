@@ -1,0 +1,31 @@
+.filter {
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.5);
+  margin: 2em 0;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  flex-wrap: wrap;
+
+  .filter__section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    width: calc(25% - 6px);
+
+    p {
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+
+    select {
+      width: 100%;
+      padding: 1em;
+      border: solid 1px #564990;
+      border-radius: 5px;
+    }
+  }
+}

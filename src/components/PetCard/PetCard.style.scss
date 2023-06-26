@@ -1,0 +1,55 @@
+.pet__card {
+  position: relative;
+  width: calc(20% - 6px);
+  height: 300px;
+
+  img {
+    height: 100%;
+    width: -webkit-fill-available;
+    object-fit: cover;
+  }
+
+  .pet__card__caption {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: rgba($color: #2a2541, $alpha: 0.5);
+    color: #fff;
+    text-align: center;
+    backdrop-filter: blur(5px);
+
+    h3 {
+      margin: 0 !important;
+    }
+
+    p {
+      margin-bottom: 0.5em;
+      font-size: 0.75em;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .pet__card {
+    width: calc(25% - 6px);
+  }
+}
+
+@media (max-width: 800px) {
+  .pet__card {
+    width: calc(33.3% - 6px);
+  }
+}
+
+@media (max-width: 600px) {
+  .pet__card {
+    width: calc(50% - 6px);
+  }
+}
+
+@media (max-width: 450px) {
+  .pet__card {
+    width: calc(100% - 6px);
+  }
+}

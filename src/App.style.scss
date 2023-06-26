@@ -22,8 +22,13 @@
   width: fit-content;
   transition: 0.5s ease;
   text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.5);
+  text-transform: uppercase;
 
   &:hover {
     background-color: #f79c31;
   }
+}
+
+.section {
+  margin-top: 70px;
 }
