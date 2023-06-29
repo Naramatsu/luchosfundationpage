@@ -1,6 +1,8 @@
+@import "../../utils/variables.scss";
+
 .section__info {
+  @include background-color-alpha(#fff, 0.9);
   width: 100%;
-  background-color: rgba($color: #fff, $alpha: 0.9);
   position: relative;
 
   .container {
@@ -16,12 +18,7 @@
         margin-bottom: 1em;
 
         &::after {
-          content: "";
-          width: 60px;
-          height: 5px;
-          background-color: #f79c31;
-          position: absolute;
-          left: 0;
+          @include under-line-text(60px, $color-orange);
           bottom: -5px;
         }
       }

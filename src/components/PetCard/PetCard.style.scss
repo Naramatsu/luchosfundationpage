@@ -1,3 +1,5 @@
+@import "../../utils/variables.scss";
+
 .pet__card {
   position: relative;
   width: calc(20% - 6px);
@@ -10,14 +12,14 @@
   }
 
   .pet__card__caption {
+    @include background-color-alpha($color-purple-strong, 0.5);
     position: absolute;
     width: 100%;
     height: auto;
     bottom: 0;
-    background-color: rgba($color: #2a2541, $alpha: 0.5);
     color: #fff;
     text-align: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: $bd-filter-5;
 
     h3 {
       margin: 0 !important;

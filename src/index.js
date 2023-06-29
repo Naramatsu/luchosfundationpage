@@ -7,7 +7,7 @@ import BuildingPage from "./components/BuildingPage/BuildingPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const { REACT_APP_IS_BUILDING_APP } = process.env;
-const isBuildingApp = REACT_APP_IS_BUILDING_APP;
+const isBuildingApp = !REACT_APP_IS_BUILDING_APP;
 
 root.render(
   <React.StrictMode>

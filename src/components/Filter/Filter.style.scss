@@ -1,13 +1,13 @@
+@import "../../utils/variables.scss";
+
 .filter {
-  background-color: #fff;
-  box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.5);
+  @include flex-box(space-between);
+  @include background-color-alpha(#fff, 0.2);
+  flex-wrap: wrap;
+  box-shadow: $box-shadow;
   margin: 2em 0;
   padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 6px;
-  flex-wrap: wrap;
 
   .filter__section {
     display: flex;
@@ -24,7 +24,7 @@
     select {
       width: 100%;
       padding: 1em;
-      border: solid 1px #564990;
+      border: solid 1px $color-purple-light;
       border-radius: 5px;
     }
   }

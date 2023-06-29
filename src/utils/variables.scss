@@ -1,0 +1,87 @@
+// box-shadows
+$box-shadow: 2px 2px 5px
+  rgba(
+    $color: #000000,
+    $alpha: 0.5,
+  );
+
+// backdrop-filter> blur
+$bd-filter-10: blur(10px);
+$bd-filter-5: blur(5px);
+
+// colors
+$color-purple-strong: #2a2541;
+$color-purple-light: #564990;
+$color-green: #16a488;
+$color-orange: #f79c31;
+
+// backgrounds
+$background-solid-color: rgba(
+  $color: #fff,
+  $alpha: 0.9,
+);
+
+// text-shadow
+$text-shadow-faded: 2px 2px 5px
+  rgba(
+    $color: #000000,
+    $alpha: 0.5,
+  );
+$text-shadow-solid: 2px 2px
+  rgba(
+    $color: #000000,
+    $alpha: 0.5,
+  );
+
+$logo-filter: brightness(0) invert(1)
+  drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+
+@mixin background-color-alpha($color, $alpha) {
+  background-color: rgba($color, $alpha);
+}
+
+@mixin under-line-text($width, $background-color) {
+  @include background-color-alpha($background-color, 1);
+  content: "";
+  width: $width;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  z-index: 3;
+}
+
+@mixin flex-box($justify-content) {
+  width: 100%;
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+  position: relative;
+}
+
+@mixin background-color-over-banner($background-color, $alpha) {
+  @include background-color-alpha($background-color, $alpha);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@mixin background-invert-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://img.freepik.com/premium-vector/pets-cats-dogs-seamless-pattern-doodle-style-with-cute-animals-toys_341076-451.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
+
+@mixin borders-left-bottom {
+  border-left: solid 2px rgba($color: #fff, $alpha: 0.3);
+  border-bottom: solid 2px rgba($color: #fff, $alpha: 0.3);
+}

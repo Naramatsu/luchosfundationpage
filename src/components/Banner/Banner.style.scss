@@ -1,3 +1,5 @@
+@import "../../utils/variables.scss";
+
 .banner {
   position: relative;
   height: 600px;
@@ -12,13 +14,7 @@
     height: 100%;
 
     &::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba($color: #564990, $alpha: 0.5);
+      @include background-color-over-banner($color-purple-light, 0.5);
       z-index: 1;
     }
 
@@ -36,10 +32,10 @@
     .banner__description {
       height: 100%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      flex-direction: column;
       color: #fff;
-      text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.5);
+      text-shadow: $text-shadow-faded;
 
       h1 {
         font-size: 5em;
@@ -49,11 +45,7 @@
         position: relative;
 
         &::before {
-          content: "";
-          width: 140px;
-          height: 5px;
-          background-color: #16a488;
-          position: absolute;
+          @include under-line-text(140px, $color-green);
           bottom: -6px;
           left: 5px;
         }
