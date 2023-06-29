@@ -8,6 +8,7 @@
   margin: 2em 0;
   padding: 1em;
   gap: 6px;
+  align-items: flex-end;
 
   .filter__section {
     display: flex;
@@ -26,6 +27,29 @@
       padding: 1em;
       border: solid 1px $color-purple-light;
       border-radius: 5px;
+    }
+  }
+
+  .general__button {
+    width: calc(25% - 6px);
+  }
+}
+
+@media (max-width: 650px) {
+  .filter {
+    .filter__section,
+    .general__button {
+      width: calc(50% - 6px);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .filter {
+    .filter__section,
+    .general__button {
+      width: 100%;
+      margin-bottom: 1em;
     }
   }
 }
