@@ -1,9 +1,10 @@
 import React from "react";
-import "./Header.style.scss";
 import Container from "../Container/Container";
+import Menu from "kromac-ui-18/dist/Menu";
 import { Link } from "react-router-dom";
 import { tabs } from "./data";
-import Menu from "kromac-ui-18/dist/Menu";
+import "./Header.style.scss";
+
 const logo = "logo.png";
 
 const isLogoTabClassName = (imgTab) => (imgTab ? "logo" : "");

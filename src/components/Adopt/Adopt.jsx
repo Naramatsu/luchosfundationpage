@@ -1,9 +1,9 @@
 import React from "react";
 import Container from "../Container";
-import { petList } from "./data";
 import PetCard from "../PetCard/PetCard";
-import "./Adopt.style.scss";
 import Filter from "../Filter/Filter";
+import { petList } from "./data";
+import "./Adopt.style.scss";
 
 const bannerImg =
   "https://i1.wp.com/pet-care.co.za/wp-content/uploads/2018/07/Pet-Care-Banner.jpg";

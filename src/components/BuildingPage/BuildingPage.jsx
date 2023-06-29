@@ -1,6 +1,6 @@
 import React from "react";
-import "./BuildingPage.style.scss";
 import Container from "../Container/Container";
+import "./BuildingPage.style.scss";
 
 const runningDog =
   "https://static.wixstatic.com/media/bef614_d58e452e2688fc2a8b35960bdafcf7b5.gif";

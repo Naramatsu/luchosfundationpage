@@ -1,6 +1,6 @@
 import React from "react";
-import "./SectionInfo.style.scss";
 import Container from "../Container/Container";
+import "./SectionInfo.style.scss";
 
 const img =
   "https://cloudfront-us-east-1.images.arcpublishing.com/semana/ZUKYARSM5FDDPDS7XKCTC7D6NU.jpg";

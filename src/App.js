@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./components/Header/Header";
-import { Route, Switch } from "react-router-dom";
-import Adopt from "./components/Adopt/Adopt";
 import HomePage from "./components/HomePage/HomePage";
+import Adopt from "./components/Adopt/Adopt";
+import { Route, Switch } from "react-router-dom";
 import "./App.style.scss";
 
 const App = () => {

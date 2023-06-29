@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "kromac-ui-18/src/css/style.css";
-import { BrowserRouter as Router } from "react-router-dom";
 import BuildingPage from "./components/BuildingPage/BuildingPage";
+import { BrowserRouter as Router } from "react-router-dom";
+import "kromac-ui-18/src/css/style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const { REACT_APP_IS_BUILDING_APP } = process.env;

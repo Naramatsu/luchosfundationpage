@@ -1,6 +1,6 @@
 import React from "react";
-import "./Banner.style.scss";
 import Container from "../Container";
+import "./Banner.style.scss";
 
 const bannerImg =
   "https://img.lalr.co/cms/2017/07/12221638/unnamed_8_0.jpg?size=xl&ratio=r40_21";
