@@ -6,7 +6,7 @@ import "./Filter.style.scss";
 const Filter = () => {
   const { languaje } = useContext(AppContext);
   return (
-    <section className="filter">
+    <section id="filter" className="filter">
       {filterOptions[languaje].map((filterOption, index) => (
         <section key={index} className="filter__section">
           <p>{filterOption.name}</p>

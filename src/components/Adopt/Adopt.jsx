@@ -29,9 +29,9 @@ const Adopt = () => {
       <Container>
         <section className="search__banner">
           <h2>{adoptBanner[languaje]}</h2>
-          <button className="general__button">
+          <a href="#filter" className="general__button">
             {adoptButtonBanner[languaje]}
-          </button>
+          </a>
         </section>
         <h3>{adoptGreenText[languaje]}</h3>
         <h2 className="pet__directory">{adoptDirectory[languaje]}</h2>
