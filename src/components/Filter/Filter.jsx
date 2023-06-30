@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../store";
-import { filterOptions } from "./data";
+import { buttonSearch, filterOptions } from "./data";
 import "./Filter.style.scss";
 
 const Filter = () => {
@@ -19,7 +19,7 @@ const Filter = () => {
           </select>
         </section>
       ))}
-      <button className="general__button">Search</button>
+      <button className="general__button">{buttonSearch[languaje]}</button>
     </section>
   );
 };

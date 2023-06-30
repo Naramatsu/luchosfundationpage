@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
 import Adopt from "./components/Adopt/Adopt";
+import FloatButton from "./components/FloatButton/FloatButton";
 import { Route, Switch } from "react-router-dom";
 import "./App.style.scss";
 
@@ -17,6 +18,7 @@ const App = () => {
           <Adopt />
         </Route>
       </Switch>
+      <FloatButton />
     </main>
   );
 };

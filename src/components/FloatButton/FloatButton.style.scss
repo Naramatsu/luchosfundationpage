@@ -1,0 +1,57 @@
+@import "../../utils/variables.scss";
+
+.float__button {
+  @include flex-box(center);
+  @include background-color-alpha(#fff, 1);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 50%;
+  color: $color-purple-light;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+  font-size: 3em;
+  z-index: 10;
+
+  svg {
+    transform: rotate(0deg);
+    transition: 0.5s;
+  }
+
+  &:hover > svg {
+    transform: rotate(360deg);
+  }
+}
+
+.modal__settings {
+  @include background-color-alpha($color-purple-light, 1);
+  box-shadow: $box-shadow;
+  width: 300px;
+  height: 150px;
+  padding: 1em;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+  opacity: 1;
+  transition: 0.5s ease;
+
+  &.hide {
+    opacity: 0;
+    bottom: -100px;
+  }
+
+  .modal__settings__toggle {
+    @include flex-box(center);
+  }
+}
+
+// input[type="checkbox"] {
+//   margin: auto 0 !important;
+// }
