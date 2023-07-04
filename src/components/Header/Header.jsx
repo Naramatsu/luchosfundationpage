@@ -6,7 +6,7 @@ import { tabs } from "./data";
 import { AppContext } from "../../store";
 import "./Header.style.scss";
 
-const logo = "logo.png";
+import logo from "./logo.svg";
 
 const isLogoTabClassName = (imgTab) => (imgTab ? "logo" : "");
 const tabMapToHamburgerMenu = (tabs) =>

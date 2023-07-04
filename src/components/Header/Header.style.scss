@@ -85,8 +85,14 @@ header {
     }
   }
 
-  .kromac-menu-hamburger .kromac-hamburger-menu {
-    display: none;
+  .kromac-menu-hamburger {
+    .kromac-hamburger-menu {
+      display: none;
+    }
+
+    .kromac-title a img {
+      filter: $logo-filter;
+    }
   }
 }
 
